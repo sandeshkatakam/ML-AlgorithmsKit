@@ -63,3 +63,29 @@ def mean_normalization(X):
     """
     mean_norm = (X - np.mean(X))/(np.max(X)- np.min(X))
     return mean_norm
+
+def normal_eqn_method(X,y):
+  """
+  Calculates the paramter matrix or theta by using Normal Equation method
+
+  Arguments:
+  X: Input array (features)
+  y: Labels
+
+  Returns:
+  theta : Parameter matrix
+  """
+  theta = np.linalg.inv((X.T)*X) * (X.T) * y
+  return theta
+
+
+
+
+if __name__ == "__main__":
+  # Testing the above functions
+  X = []
+  y = []
+  theta= []
+  
+
+
