@@ -61,8 +61,8 @@ def mean_normalization(X):
     Returns:
     Mean normalized input data( Mean value of the data will be zero)
     """
-    mean_norm = (X - np.mean(X))/(np.max(X)- np.min(X))
-    return mean_norm
+    X_norm = (X - np.mean(X))/(np.max(X)- np.min(X))
+    return X_norm
 
 def normal_eqn_method(X,y):
   """
@@ -86,6 +86,7 @@ if __name__ == "__main__":
   X = []
   y = []
   theta= []
+
   
 
 
