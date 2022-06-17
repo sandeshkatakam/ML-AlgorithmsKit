@@ -63,4 +63,3 @@ def mean_normalization(X):
     """
     mean_norm = (X - np.mean(X))/(np.max(X)- np.min(X))
     return mean_norm
-
