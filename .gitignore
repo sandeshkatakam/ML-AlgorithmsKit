@@ -14,6 +14,8 @@ __pycache__/
 build/
 develop-eggs/
 dist/
+data/
+ML_AlgorithmsKit.egg-info/
 downloads/
 eggs/
 .eggs/

@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-class Neural:
+class Neural_Network:
     def train(self,alpha = 0.07,n_iter = 2000,lam = 0.20):
        
         """'train' method takes argument as Learning Rate(alpha), Regularisation Constant(lam), and No.of Iterations(n_iter).

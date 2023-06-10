@@ -1,14 +1,27 @@
-include = '\.pyi?$'
-exclude = '''
-/(
-    \.git
-  | \.hg
-  | \.mypy_cache
-  | \.tox
-  | \.venv
-  | _build
-  | buck-out
-  | build
-  | dist
-)/
-'''
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "MLAlgorithmsKit"
+authors = [
+    {name = "Sandesh Katakam", email = "sandeshkatakam@gmail.com"},
+]
+description = "Implementation of ML Algorithms from Scratch using Numpy and Pandas"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["one", "two"]
+license = {text = "MIT License"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "numpy",
+    'pandas ; python_version<"3.8"',
+    "matplotlib",
+]
+dynamic = ["version"]
+
+[project.urls]
+"Homepage" = "https://github.com/sandeshkatakam/MLAlgorithmsKit"
+"Bug Tracker" = "https://github.com/pypa/sandeshkatakam/MLAlgorithmsKit/issues"

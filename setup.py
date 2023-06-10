@@ -1,6 +1,7 @@
 import runpy
 
 import setuptools
+__version__= "0.0.1"  
 
 DEV_REQUIREMENTS = [
     "black",
@@ -18,12 +19,12 @@ install_requires = [line.strip() for line in open("requirements.txt").readlines(
 with open("README.md", "r", encoding="UTF-8") as fh:
     long_description = fh.read()
 
-__version__ = runpy.run_path("ml-algorithmskit/_version.py")["__version__"]
+# __version__ = runpy.run_path("ml-algorithmskit/_version.py")["__version__"]
 
 # Setup package
 setuptools.setup(
     name="ML-AlgorithmsKit",
-    version=__version__,
+    version="0.0.1",
     author="Sandesh Katakam",
     author_email="sandeshkatakam@gmail.com",
     description="A Library with Implementations of Machine Learning Algorithms from scratch",

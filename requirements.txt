@@ -1,6 +1,4 @@
-hydra-core
-matplotlib
 numpy
 pandas
-seaborn
-
+matplotlib
+random
